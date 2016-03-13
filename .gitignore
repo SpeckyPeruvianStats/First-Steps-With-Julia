@@ -1,3 +1,7 @@
 # Ignore files ginishing with ~
 *~
-
+# Ignore folders of the data because they are heavy
+test\
+testResized\
+train\
+trainResized\
