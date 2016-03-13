@@ -1,7 +1,7 @@
 # Ignore files ginishing with ~
 *~
 # Ignore folders of the data because they are heavy
-test\
-testResized\
-train\
-trainResized\
+1.Data/1.RowData/test/
+1.Data/1.RowData/testResized/
+1.Data/1.RowData/train/
+1.Data/1.RowData/trainResized/
