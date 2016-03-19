@@ -35,9 +35,7 @@ git add --ignore-removal .
 
 # Update all modified and deleted files (tracked files).
 git add -u
-
-# Add all the new, modified and removed files (untracked and tracked).
-#git add -A
+# Add all the new, modified and removed files (untracked and tracked).  #git add -A
 git add . 
 
 # Check status (added and removed files).

@@ -8,3 +8,5 @@
 
 # Ignore zip files
 *.zip
+# Ignore swap file created by vim
+*.swp

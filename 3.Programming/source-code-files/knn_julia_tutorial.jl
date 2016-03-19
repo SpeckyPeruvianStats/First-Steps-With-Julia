@@ -3,7 +3,7 @@ Pkg.add("DataFrames")
 using Images
 using DataFrames
 
-#typeData could be either "train" or "test.
+#typeData could be either "train" or "test".
 #labelsInfo should contain the IDs of each image to be read
 #The images in the trainResized and testResized data files
 #are 20x20 pixels, so imageSize is set to 400.
