@@ -13,13 +13,14 @@ function read_data(typeData, labelsInfo, imageSize, path)
  #Intialize x matrix
  x = zeros(size(labelsInfo, 1), imageSize)
 
- for (index, idImage) in enumerate(labelsInfo["ID"]) 
+ for (index, idImage) in enumerate(labelsInfo[:ID]) 
   #Read image file 
   nameFile = "$(path)/$(typeData)Resized/$(idImage).Bmp"
   img = imread(nameFile)
 
   #Convert img to float values 
-  temp = float32sc(img)
+  temp = float32sc(img) # deprecated
+  temp = float32(img) # deprecated
 
   #Convert color images to gray images
   #by taking the average of the color scales. 
@@ -36,9 +37,10 @@ end
 
 imageSize = 400 # 20 x 20 pixel
 
+path_proj = "/home/erick/ERICK/Kaggle/SpiPeruStats/FirstStepsWithJulia"
 #Set location of data files, folders
-path = ...
-
+path = "$(path_proj)/1.Data/1.RowData"
+path 
 #Read information about training data , IDs.
 labelsInfoTrain = readtable("$(path)/trainLabels.csv")
 
