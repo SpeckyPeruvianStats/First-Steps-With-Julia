@@ -10,3 +10,5 @@
 *.zip
 # Ignore swap file created by vim
 *.swp
+*.Rhistory
+
