@@ -11,4 +11,5 @@
 # Ignore swap file created by vim
 *.swp
 *.Rhistory
-
+juliaKNNSubmission.csv
+juliaSubmission1.csv
